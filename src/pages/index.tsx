@@ -1,9 +1,11 @@
 import Head from "next/head"
 //import styles from "../styles/global.css"
  
-import {   getStoryblokApi } from "@storyblok/react"
+import {   getStoryblokApi, StoryblokComponent  } from "@storyblok/react"
  
 export default function Home(props: any) {
+  const story = props.story;
+
   return (
     <div >
       <Head>
@@ -20,6 +22,8 @@ export default function Home(props: any) {
       <main>
         
       </main>
+
+      <StoryblokComponent blok={story.content} />
     </div>
   )
 }
