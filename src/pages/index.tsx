@@ -14,10 +14,10 @@ export default function Home(props: any) {
       </Head>
  
       <header>
-        <h1>
-          STORY NAME{ props.story ? props.story.name : 'My Site' }
-        </h1>
-      </header>
+        <h1 className='text-center'>
+            { story ? story.name : 'My Site' }
+          </h1>
+        </header>
  
       <main>
         
