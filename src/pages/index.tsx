@@ -1,31 +1,28 @@
 import Head from "next/head"
-//import styles from "../styles/global.css"
- 
-import {   getStoryblokApi, StoryblokComponent  } from "@storyblok/react"
- 
-export default function Home(props: any) {
-  const story = props.story;
 
+import {
+  useStoryblokState,
+  getStoryblokApi,
+  StoryblokComponent,
+} from "@storyblok/react";
+ 
+export default function Home({ story }: any): JSX.Element {
+  story = useStoryblokState(story);
+ 
   return (
-    <div >
+    <div>
       <Head>
-        <title>Storyblok Tests </title>
+        <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
  
       <header>
-        <h1 className='text-center'>
-            { story ? story.name : 'My Site' }
-          </h1>
-        </header>
+        <h1>{story ? story.name : "My Site"}</h1>
+      </header>
  
-      <main>
-        
-      </main>
-
       <StoryblokComponent blok={story.content} />
     </div>
-  )
+  );
 }
 
 type sbParamsType = {
