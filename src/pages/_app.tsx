@@ -18,12 +18,12 @@ const components = {
 
 
 storyblokInit({
-  accessToken: "JqynnGEuwXQVlAQgcosJigtt",
+  accessToken: "bGysD1GjYECAg9rzCf7pegtt",
   use: [apiPlugin],
   apiOptions: {
     region: "eu",
   },
-  components
+  components,
 });
 
 
