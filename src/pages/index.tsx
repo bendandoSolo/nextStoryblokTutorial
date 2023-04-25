@@ -6,6 +6,8 @@ import {
   StoryblokComponent,
 } from "@storyblok/react";
  
+import Layout from "../components/Layout";
+
 export default function Home({ story }: any): JSX.Element {
   story = useStoryblokState(story);
  
@@ -19,8 +21,10 @@ export default function Home({ story }: any): JSX.Element {
       <header>
         <h1>{story ? story.name : "My Site"}</h1>
       </header>
- 
+
+      <Layout>
       <StoryblokComponent blok={story.content} />
+      </Layout>
     </div>
   );
 }
