@@ -192,6 +192,20 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
+"@storyblok/js@^2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@storyblok/js/-/js-2.1.3.tgz#e3b47656d6cb4a50e06ba2c63ba63264627bd017"
+  integrity sha512-lUnCygXMmw3VJQldM5JyEFwraKz2OYN+rt1FvvlWn/55DQfbB/DIgnoQ1mpRw4tJoBqGPRgEQJGOH8e/Q1Vm7Q==
+  dependencies:
+    storyblok-js-client "^5.10.2"
+
+"@storyblok/react@^2.0.17":
+  version "2.0.17"
+  resolved "https://registry.yarnpkg.com/@storyblok/react/-/react-2.0.17.tgz#622175945cfce7e456e16eb072ecc8e76e5146ba"
+  integrity sha512-cnKF3YhySD94o1X7LuDOh1ousePWM/SGiQngx4/AcqtDF2GXBD2SBHN9nlQV4AtqtDJUPyFxj6WinBfwI39RAQ==
+  dependencies:
+    "@storyblok/js" "^2.1.3"
+
 "@swc/helpers@0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.0.tgz#bf1d807b60f7290d0ec763feea7ccdeda06e85f1"
@@ -2092,6 +2106,11 @@ stop-iteration-iterator@^1.0.0:
   integrity sha512-iCGQj+0l0HOdZ2AEeBADlsRC+vsnDsZsbdSiH1yNSjcfKM7fdpCMfqAL/dwF5BLiw/XhRft/Wax6zQbhq2BcjQ==
   dependencies:
     internal-slot "^1.0.4"
+
+storyblok-js-client@^5.10.2:
+  version "5.10.2"
+  resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-5.10.2.tgz#049e9637c9a37924093309eb4cdce90c2965d438"
+  integrity sha512-Im/xN9PApDvZbONPYv3SpzjfIfXK63uPf6/eYJPvdIWnzCiWY5hlc2UYkoCR4YoaQBBOEBP1UUcGr5QjesOULg==
 
 streamsearch@^1.1.0:
   version "1.1.0"
