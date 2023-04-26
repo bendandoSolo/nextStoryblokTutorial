@@ -4,6 +4,9 @@ const Article = ({ blok }) => {
   return (
     <section className="text-gray-600 body-font">
       <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+        <p>{JSON.stringify(blok)}</p>
+        
+        
         <img
           className="  md:h-96 w-full mb-10 object-cover object-center rounded"
           alt={blok.image.alt}
